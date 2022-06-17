@@ -24,8 +24,8 @@ public class ServicosFragment extends Fragment {
         binding = FragmentServicosBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        servicosViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+//        final TextView textView = binding.textGallery;
+//        servicosViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

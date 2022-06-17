@@ -10,7 +10,7 @@ public class PrincipalViewModel extends ViewModel {
 
     public PrincipalViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is principal fragment");
     }
 
     public LiveData<String> getText() {

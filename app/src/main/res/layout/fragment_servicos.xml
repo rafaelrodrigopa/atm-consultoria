@@ -7,16 +7,56 @@
     tools:context=".ui.servicos.ServicosFragment">
 
     <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum velit ex, commodo maximus neque dapibus in. Duis in mollis odio, et sagittis magna. Proin nec vulputate risus, ultrices convallis leo. Maecenas sed cursus orci. Quisque nunc neque, luctus nec mi vestibulum, auctor tristique leo. In condimentum mi sit amet lectus congue, eu mollis libero tempus."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Sistema de gestão de qualidade"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:text="Sistema de gestão de qualidade"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum velit ex, commodo maximus neque dapibus in. Duis in mollis odio, et sagittis magna. Proin nec vulputate risus, ultrices convallis leo. Maecenas sed cursus orci. Quisque nunc neque, luctus nec mi vestibulum, auctor tristique leo. In condimentum mi sit amet lectus congue, eu mollis libero tempus."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,8 +24,9 @@ public class PrincipalFragment extends Fragment {
         binding = FragmentPrincipalBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        principalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //final TextView textView = binding.textHome;
+        //final TextView textView = binding.textHome;
+        //principalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
