@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_principal">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.projects.atmconsultoria.ui.home.HomeFragment"
+        android:id="@+id/nav_principal"
+        android:name="com.projects.atmconsultoria.ui.principal.PrincipalFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_principal" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.projects.atmconsultoria.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_servicos"
+        android:name="com.projects.atmconsultoria.ui.servicos.ServicosFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_servicos" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.projects.atmconsultoria.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_clientes"
+        android:name="com.projects.atmconsultoria.ui.clientes.ClientesFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_clientes" />
+
+    <fragment
+        android:id="@+id/nav_contato"
+        android:name="com.projects.atmconsultoria.ui.contato.ContatoFragment"
+        android:label="@string/menu_contato"
+        tools:layout="@layout/fragment_contato" />
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="com.projects.atmconsultoria.ui.sobre.SobreFragment"
+        android:label="@string/menu_Sobre"
+        tools:layout="@layout/fragment_sobre" />
+
 </navigation>
