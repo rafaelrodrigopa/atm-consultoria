@@ -1,5 +1,7 @@
 package com.projects.atmconsultoria;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -33,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                enviarEmail();
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -50,12 +51,25 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    private void enviarEmail() {
+        String celularr = "tel:11996352894";
+        String imagem = "https://www.google.com/search?q=imagen&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixsNTBh7X4AhXZpZUCHQH9Ai4Q_AUoAXoECAEQAw&biw=1920&bih=932&dpr=1#imgrc=lhKJIkqqBgBSmM";
+        String endereco = "https://www.google.com/maps/place/Morro+Santos+da+Silva/@-23.2816154,-46.7451078,13z/data=!4m9!1m2!2m1!1sparque!3m5!1s0x94cee5f344c9eddd:0x3dab380264b57a23!8m2!3d-23.3177342!4d-46.7157353!15sCgZwYXJxdWWSAQ9lY29sb2dpY2FsX3Bhcms?hl=pt-BR";
+        //Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse(endereco));
+
+        Intent intent = new Intent( Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"atendimento@atmconsultoria.com.br"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, new String[]{"Contato pelo App"});
+        intent.putExtra(Intent.EXTRA_TEXT, new String[]{"Mensagem automatica"});
+
+        // https://www.sitepoint.com/mime-types-complete-list/
+//        intent.setType("message/rfc822");
+//        intent.setType("text/plain");
+        intent.setType("image/*");
+
+        startActivity( Intent.createChooser(intent,"Compartilhar"));
     }
+
 
     @Override
     public boolean onSupportNavigateUp() {
