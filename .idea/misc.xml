@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/degrade_fundo_navegacao.xml" value="0.2985" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.2985" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3723958333333333" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.3723958333333333" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.25757575757575757" />
